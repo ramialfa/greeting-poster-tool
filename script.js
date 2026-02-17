@@ -1,9 +1,11 @@
 // === CONFIG ===
-const posterSrc = "RPL Ramadan greeting.png";   // your poster file
-const textX = 600;                // horizontal position of text
-const textY = 900;                // vertical position of text
-const maxWidth = 800;             // text width limit
-const lineHeight = 60;            // spacing between lines
+const posterSrc = "RPL Ramadan greeting.png";  // your uploaded poster file name
+
+// Adjust these to match your poster layout
+const textX = 600;       // center horizontally
+const textY = 1150;       // vertical position
+const maxWidth = 800;    // text width limit
+const lineHeight = 60;   // spacing between lines
 
 // === SETUP ===
 const canvas = document.getElementById("posterCanvas");
@@ -26,8 +28,8 @@ function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.drawImage(poster, 0, 0);
 
-  ctx.fillStyle = "#ffffff";
-  ctx.font = "48px Tajawal, sans-serif";
+  ctx.fillStyle = "#FFB000";
+  ctx.font = "bold 60px Tajawal, sans-serif";
   ctx.textAlign = "center";
 
   const text = input.value;
