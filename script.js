@@ -28,7 +28,7 @@ function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.drawImage(poster, 0, 0);
 
-  ctx.fillStyle = "#FFB000";
+  ctx.fillStyle = "#5047b2";
   ctx.font = "bold 60px Tajawal, sans-serif";
   ctx.textAlign = "center";
 
@@ -68,3 +68,4 @@ downloadBtn.addEventListener("click", () => {
   link.href = canvas.toDataURL();
   link.click();
 });
+
